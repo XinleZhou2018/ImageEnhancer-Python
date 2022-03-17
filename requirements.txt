@@ -1,0 +1,37 @@
+anyio==3.5.0
+asgiref==3.5.0
+certifi==2021.10.8
+charset-normalizer==2.0.12
+click==8.0.4
+colorama==0.4.4
+dnspython==2.2.1
+email-validator==1.1.3
+fastapi==0.75.0
+h11==0.13.0
+httptools==0.2.0
+idna==3.3
+itsdangerous==2.1.1
+Jinja2==3.0.3
+MarkupSafe==2.1.1
+mkl-fft==1.3.1
+mkl-random @ file:///C:/ci/mkl_random_1626186184308/work
+mkl-service==2.4.0
+numpy @ file:///C:/ci_310/numpy_and_numpy_base_1643798589088/work
+orjson==3.6.7
+Pillow==9.0.1
+pydantic==1.9.0
+python-dotenv==0.19.2
+python-multipart==0.0.5
+PyYAML==5.4.1
+requests==2.27.1
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+sniffio==1.2.0
+starlette==0.17.1
+torch @ file:///C:/Users/hflov/Desktop/torch-1.11.0%2Bcu113-cp39-cp39-win_amd64.whl
+torchvision==0.12.0
+typing_extensions==4.1.1
+ujson==4.3.0
+urllib3==1.26.8
+uvicorn==0.15.0
+watchgod==0.8
+websockets==10.2
