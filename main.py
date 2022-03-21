@@ -20,7 +20,7 @@ async def anime(request_data: Item):
     base64_data = request_data.base64
     base64_data = unquote(base64_data, 'utf-8')
     img = utils.base64_to_image(base64_data)
-    new_img = detect(img)
+    new_img = detect_anime(img)
     img_data = utils.image_to_base64(new_img)
     return {"message": "success","img":img_data}
 

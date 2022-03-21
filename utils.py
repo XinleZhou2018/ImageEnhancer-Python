@@ -1,17 +1,19 @@
 import re
 import base64
 from io import BytesIO
-
 from PIL import Image
-
+from pillow_heif import register_heif_opener
 
 
 
 def base64_to_image(base64_str, image_path=None):
+    register_heif_opener()
     base64_data = re.sub('^data:image/.+;base64,', '', base64_str)
     byte_data = base64.b64decode(base64_data)
     image_data = BytesIO(byte_data)
+    
     img = Image.open(image_data)
+    
     if image_path:
         img.save(image_path)
     return img

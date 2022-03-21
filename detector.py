@@ -14,7 +14,7 @@ from deoldify.visualize import get_image_colorizer
 check_point = './weights/face_paint_512_v2.pt' #face_paint_512_v1.pt
 
 def detect_anime(img):
-    new_img = None
+    print(img.size)
     net = Generator()
     net.load_state_dict(torch.load(check_point, map_location="cpu"))
     net.eval()
